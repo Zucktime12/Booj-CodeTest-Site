@@ -1,0 +1,333 @@
+
+	/****** Global Styles ******/
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: #2E989F;
+}
+
+h1 {
+	padding: 20px 15px 0;
+	margin-top: 0;
+}
+
+h4{
+	font-weight: bold;
+}
+
+.container-main {
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	width: 20%;
+}
+
+li {
+	list-style-type: none;
+}
+
+body a {
+	font-weight: bold;
+}
+
+
+
+/****** Header/Nav *****/
+.header {
+	width: 100%;
+}
+
+.head-group {
+	width: 100%;
+	display: flex;
+	flex: 1;
+	padding: 10px;
+} 
+
+ul.navi {
+	width: 80%;
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+div.navi{
+	display: flex;
+	flex-wrap: none;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	width: 80%;
+	align-items: flex-end;
+}
+
+.navi a {
+	color: black;
+}
+
+li.contact-nav, li.account {
+	padding-right: 15px;
+}
+
+.main-body {
+	color: initial;
+	padding: 0;
+	margin: 0;
+}
+
+/****** ******/
+
+.icon {
+	width: 100%;
+	svg: 25px 25px;
+}
+
+.icon p {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+.icon2 p {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.icon svg, .icon2 svg {
+ 	fill: #1F757D;
+ 	height: 100%;
+}
+
+.contact-nav, .account, .menu {
+	padding: 10px 20px 0 10px;
+}
+
+.tab-content {
+	padding: 15px 0;
+}
+
+.lang{
+	padding-bottom: 15px;
+}
+
+/*.phone::before {
+	content: "";
+	background: url("HTML-CSS/Assets/SVGs/contact.svg");
+	height:25px;
+	width: 25px;
+	background-size: 25px 25px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	margin-right: 20px;
+}
+
+.website::before {
+	content: "";
+	background: url("HTML-CSS/Assets/SVGs/website.svg");
+	height:25px;
+	width: 25px;
+	background-size: 25px 25px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	margin-right: 20px;
+}
+
+.office::before {
+	content: "";
+	background: url("HTML-CSS/Assets/SVGs/office.svg");
+	height:25px;
+	width: 25px;
+	background-size: 25px 25px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	margin-right: 20px;
+}
+
+.newsletter::before {
+	content: "";
+	background: url("HTML-CSS/Assets/SVGs/enewsletter.svg");
+	height:25px;
+	width: 25px;
+	background-size: 25px 25px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	margin-right: 20px;
+}*/
+
+
+/*********SOCIAL LINK FARM*********/
+
+div.social-farm {
+	padding: 10px 10px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer svg, footer .social-farm svg {
+	fill: white;
+}
+
+.social-farm svg {
+	fill: black;
+}
+
+.realtor-info, .realtor-photo{
+	background: #EEE;
+}
+
+.center-text {
+	text-align: center;
+	padding: 15px 0 20px;
+}
+
+.right-push {
+	padding-right: 15px;
+}
+
+.search {
+	background: lightgray;
+	width: 100%;
+}
+
+
+.input-size {
+	height: 40px;
+	margin: 0;
+	width: 70%;
+	font-size: initial;
+	padding: 5px 8px;
+}
+
+.search-btn {
+	vertical-align: top;
+	margin: 0;
+	height: 40px;
+	width: 30%;
+	/*background: url("HTML-CSS/Assets/SVGs/search.svg");*/
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #1F757D;
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-size: initial;
+}
+
+.group {
+	font-size: 0;
+	width: 90%;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+.hero {
+	padding-left: 15px;
+}
+
+.light-text {
+	color: lightgray;
+	padding-left: 15px;
+}
+
+li.phone, li.website, li.office, li.newsletter {
+	padding-bottom: 25px;
+}
+
+.connect  { 
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.contact-btn {
+	height: 40px;
+	width: 95%;
+	margin-bottom: 20px;
+	background-color: 	#2E989F;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	
+	.container-main {
+		padding: 0;
+		margin: 0;
+    }
+
+    a.about, a.list, a.my-sold {
+    	padding-right: 15px;
+    }
+
+}
+
+.content li {
+	display: none;
+}
+
+.content .active {
+	display: inline;
+}
+
+
+
+footer {
+	background: #2399A5;
+	color: white;
+	text-align: center;
+}
+
+.align {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.foot-links {
+	padding-bottom: 10px;
+}
+
+footer span{
+	font-size: 12px;
+	padding: 20px 0;
+}
+
+footer a {
+	color: white;
+	text-decoration: underline;
+	margin-top: 20px;
+	padding-right: 5px;
+}
+
+footer img {
+	padding-bottom: 25px;
+	/*color: white;*/
+}
+
+footer svg {
+	fill: white;
+	margin: 2px 8px 0 0 ;
+}
+
+footer.container {
+	width: 100%;
+}
+
