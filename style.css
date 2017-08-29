@@ -26,6 +26,10 @@ h4{
 	width: 20%;
 }
 
+.logo-lg {
+	display: none;
+}
+
 li {
 	list-style-type: none;
 }
@@ -34,7 +38,13 @@ body a {
 	font-weight: bold;
 }
 
+.hidden-menu {
+	display: none;
+}
 
+.search-links {
+	display: none;
+}
 
 /****** Header/Nav *****/
 .header {
@@ -81,6 +91,45 @@ li.contact-nav, li.account {
 }
 
 /****** ******/
+
+.search {
+	background: gray;
+	width: 100%;
+}
+
+.search svg {
+	fill: white;
+	margin-top: 3px;
+}
+
+.hero {
+	padding-left: 15px;
+}
+
+.hero img {
+	height: 290px;
+	width: 210px;
+}
+
+.light-text {
+	color: gray;
+	padding-left: 15px;
+}
+
+li.phone, li.website, li.office, li.newsletter {
+	padding-bottom: 25px;
+}
+
+.connect  { 
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.connect svg {
+	margin: 5px 10px 0 0;
+	fill: #2E989F;
+}
+
 
 .icon {
 	width: 100%;
@@ -189,6 +238,11 @@ footer svg, footer .social-farm svg {
 	background: #EEE;
 }
 
+.realtor-photo img {
+	height: 290px;
+	width: 210px;
+}
+
 .center-text {
 	text-align: center;
 	padding: 15px 0 20px;
@@ -198,10 +252,7 @@ footer svg, footer .social-farm svg {
 	padding-right: 15px;
 }
 
-.search {
-	background: lightgray;
-	width: 100%;
-}
+
 
 
 .input-size {
@@ -228,29 +279,20 @@ footer svg, footer .social-farm svg {
 	font-size: initial;
 }
 
+.search-btn svg {
+	margin-top: 7px;
+}
+
+.search-btn p {
+	color: transparent;
+	text-indent: -1000em;
+}
+
 .group {
 	font-size: 0;
 	width: 90%;
 	margin: 0 auto;
 	padding: 15px 0;
-}
-
-.hero {
-	padding-left: 15px;
-}
-
-.light-text {
-	color: lightgray;
-	padding-left: 15px;
-}
-
-li.phone, li.website, li.office, li.newsletter {
-	padding-bottom: 25px;
-}
-
-.connect  { 
-	list-style-type: none;
-	padding-left: 15px;
 }
 
 .contact-btn {
@@ -263,19 +305,6 @@ li.phone, li.website, li.office, li.newsletter {
 	border-radius: 5px;
 	display: block;
 	margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-	
-	.container-main {
-		padding: 0;
-		margin: 0;
-    }
-
-    a.about, a.list, a.my-sold {
-    	padding-right: 15px;
-    }
-
 }
 
 .content li {
@@ -331,3 +360,175 @@ footer.container {
 	width: 100%;
 }
 
+/****** Media Queries *****/
+
+@media (min-width: 768px) {
+	
+	.logo {
+    	display: none;
+    }
+
+    .logo-lg {
+    	display: inline-block;
+    }
+
+	.container-main {
+		padding: 0;
+		margin: 0;
+    }
+
+    .contact-btn {
+    	width: 85%;
+    }
+
+    .break1 .social-farm {
+    	width: 85%;
+    	margin: 0 auto;
+    }
+
+    a.about, a.list, a.my-sold {
+    	padding-right: 15px;
+    }
+
+    .realtor-all {
+    	display: flex;
+    	flex: 1;
+    }
+
+    .realtor-photo {
+    	width: 20%;
+    }
+
+    .realtor-info {
+    	width: 80%;
+    	display: flex;
+    	flex: 1;
+    }
+
+    .break1, .align-connect {
+    	width: 50%;
+    }
+
+    .realtor-photo img {
+    	height: 210px;
+    	width: 160px;
+    }
+
+    div.realtor-photo, div.break1,div.align-connect {
+    	height: 210px;
+    }
+
+    .search-btn svg {
+    	display: none;
+    }
+
+    .search-btn p {
+    	color: white;
+    	text-indent: 0;
+    	margin-top: 5px;
+    }
+
+    .search-links {
+    	display: inline-block;
+    	width: 50%;
+    }
+
+    .search-links a {
+    	color: white;
+    }
+
+    div.search-links {
+    	text-align: center;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	text-decoration: underline;
+    	padding: 0 30px;
+    }
+
+    button.search-btn {
+    	width: 25%;
+    	border-radius: 5px;
+    	margin-left: 30px;
+    }
+
+    input.input-size{
+    	width: 60%;
+    	margin-left: 15px;
+    }
+
+    .group {
+    	width: 50%;
+    }
+
+    .search {
+    	display: flex;
+    	flex: 1;
+    }
+
+    .main-content {
+    	width: 100%;
+    	display: flex;
+    	flex: 1;
+    	padding: 15px 0;
+    }
+
+    main.container {
+  		width: 80%;
+  		margin-top: 20px;
+  	}
+
+  	div.container.lang {
+  		width: 20%;
+  	}
+
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    	background-color: #2E989F;
+    }
+
+    footer.container {
+    	width: 100%;
+    	display: flex;
+    	flex: 1;
+    }
+
+    .footbox1, .footbox2 {
+    	width: 50%;
+    }
+
+    .align, footer .footbox1 p {
+    	justify-content: left;
+    	text-align: left;
+    }
+
+    div.foot-links {
+    	padding-top: 15px;
+    	text-align: right;
+    }
+
+    div.center-text, span.right{
+    	text-align: right;
+    	justify-content: right;
+    }
+}
+
+@media (min-width: 1100px) {
+	.hidden-menu {
+		display: block;
+		width: 100%;
+		text-align: right;
+	}
+
+	.head-group {
+		flex-wrap: wrap;
+	}
+
+	.hidden-menu a {
+		color: black;
+		padding-right: 15px;
+	}
+
+	a.menu {
+		display: none;
+	}
+}	
